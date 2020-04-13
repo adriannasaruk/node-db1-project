@@ -28,5 +28,5 @@ where ContactName = 'Bilbo Baggins'
 -- (Stretch) Find a query to discover how many different cities are stored in the Customers table. Repeats should not be double counted
 SELECT COUNT (DISTINCT City) From [Customers]
 -- (Stretch) Find all suppliers who have names longer than 20 characters. You can use `length(SupplierName)` to get the length of the name
-SELECT * FROM [Customers]
-where length(CustomerName) <= 20
+SELECT * FROM [Suppliers]
+where length(SupplierName) > 20
